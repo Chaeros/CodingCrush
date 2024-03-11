@@ -1,0 +1,192 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: aqua;
+    padding: 8px 12px;
+    z-index: 1000;
+}
+
+.navbar-profile img {
+    width: 50px;
+    height: 50px;
+    border-radius: 20px;
+}
+
+.navbar-logo {
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 35px;
+}
+
+.navbar-menu {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+}
+
+.navbar-menu li {
+    padding: 8px 20px;
+}
+
+.navbar-menu li:hover {
+    background-color: beige;
+    border-radius: 4px;
+}
+
+.mid {
+    display: flex;
+    width: 100%;
+}
+
+.container {
+    flex: 1;
+    padding: 20px;
+    margin-left: 200px;
+    margin-top: 60px;
+    height: 100%;
+}
+
+.sidebar {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    height: 100%;
+    width: 200px;
+    list-style: none;
+    text-align: center;
+    background-color: aqua;
+    z-index: 1000;
+}
+
+.sidebar li {
+    padding: 15px
+}
+
+.sidebar li:hover {
+    background-color: beige;
+    border-radius: 4px;
+}
+
+footer {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: aqua;
+    text-align: center;
+    padding: 5px 0;
+    z-index: 1000;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.content img {
+    width: 500px;
+    height: 500px;
+}
+/*생성된 팀 리스트 보여주는 페이지*/
+.team-view{
+    background-color: yellow;
+    height : 500px;
+    width: 50%;
+    overflow: auto;
+}
+
+.teammate-list{
+    border: 1px black solid;
+    background-color: orange;
+    width: 50%;
+    height : 600px;
+}
+.team-box{
+    display: flex;
+    align-items: center;
+    border : 1px black solid;
+    height : 70px;
+    background-color: #3455;
+}
+.team-name, .team-box{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.team-name{
+    display: inline;
+}
+#team-plus{
+    margin-top : 20px;
+    justify-content: center;
+}
+.delete-team{
+    float: right;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+#team-add{
+    height: 50%;
+}
+
+/*  */
+.team_set {
+    width: 60%;
+    height: 500px;
+    background-color: antiquewhite;
+    display: flex
+}
+
+.user_list {
+    width: 40%;
+    height: 500px;
+    background-color: blueviolet;
+}
+
+.user_list>h3{
+    margin:30px;
+}
+
+.list{
+    background-color: beige;
+    display: flex;
+    margin: 20px;
+    height: 300px;
+    overflow-y: scroll;
+    flex-wrap: wrap;
+    align-items:flex-start;
+}
+
+.user{
+    margin: 5px;
+    height: 50px;
+    width: 50px;
+    background-color: yellow;
+    border-radius: 20%;
+}
+
+.team_btn{
+    display: flex;
+    justify-content: center;
+}
+
+.team_btn>button{
+    width: 50%;
+    margin:10px;
+}

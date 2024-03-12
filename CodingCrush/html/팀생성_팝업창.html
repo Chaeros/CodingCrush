@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Popup</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+  .popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  max-width: 400px; /* 스마트폰 크기 정도 */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.popup-header {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.popup-header input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.popup-content {
+  max-height: 300px;
+  overflow-y: auto;
+  padding: 10px;
+}
+
+.scrollable-content {
+  padding-bottom: 10px; /* 스크롤바 공간 확보 */
+}
+
+.box {
+  display: flex;
+  padding: 10px;
+  margin-bottom: 5px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  justify-content: space-between;
+}
+
+.popup-footer {
+  padding: 10px;
+  text-align: center;
+}
+
+.add-button,
+.delete-button {
+  padding: 8px 16px;
+  margin: 0 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.add-button:hover,
+.delete-button:hover {
+  background-color: #0056b3;
+}
+
+.select{
+  width: 30px;
+  height:30px;
+  border-radius: 50%;
+}
+
+</style>
+<body>
+
+<div class="popup">
+  <div class="popup-header">
+    <input type="text" placeholder="검색어 입력">
+  </div>
+  <div class="popup-content">
+    <div class="scrollable-content">
+      <!-- 스크롤 가능한 목록 -->
+      <div class="box">
+        <div class="name">내용 1</div>
+        <button class="select">&#10004;</button>
+      </div>
+      <div class="box">
+        <div class="name">내용 2</div>
+        <button class="select">&#10004;</button>
+      </div><div class="box">
+        <div class="name">내용 3</div>
+        <button class="select">&#10004;</button>
+      </div><div class="box">
+        <div class="name">내용 4</div>
+        <button class="select">&#10004;</button>
+      </div><div class="box">
+        <div class="name">내용 5</div>
+        <button class="select">&#10004;</button>
+      </div><div class="box">
+        <div class="name">내용 6</div>
+        <button class="select">&#10004;</button>
+      </div><div class="box">
+        <div class="name">내용 7</div>
+        <button class="select">&#10004;</button>
+      </div><div class="box">
+        <div class="name">내용 8</div>
+        <button class="select">&#10004;</button>
+      </div><div class="box">
+        <div class="name">내용 9</div>
+        <button class="select">&#10004;</button>
+      </div><div class="box">
+        <div class="name">내용 10</div>
+        <button class="select">&#10004;</button>
+      </div>
+    </div>
+  </div>
+  <div class="popup-footer">
+    <button class="add-button">추가</button>
+    <button class="delete-button">취소</button>
+  </div>
+</div>
+
+</body>
+</html>

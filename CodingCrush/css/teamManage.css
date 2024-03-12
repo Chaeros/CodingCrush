@@ -1,0 +1,281 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: aqua;
+    padding: 8px 12px;
+    z-index: 1000;
+}
+
+.navbar-profile img {
+    width: 50px;
+    height: 50px;
+    border-radius: 20px;
+}
+
+.navbar-logo {
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 35px;
+}
+
+.navbar-menu {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+}
+
+.navbar-menu li {
+    padding: 8px 20px;
+}
+
+.navbar-menu li:hover {
+    background-color: beige;
+    border-radius: 4px;
+}
+
+.mid {
+    display: flex;
+    width: 100%;
+}
+
+.container {
+    flex: 1;
+    padding: 20px;
+    margin-left: 200px;
+    margin-top: 60px;
+}
+
+.sidebar {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    height: 100%;
+    width: 200px;
+    list-style: none;
+    text-align: center;
+    background-color: aqua;
+    z-index: 1000;
+}
+
+.sidebar li {
+    padding: 15px
+}
+
+.sidebar li:hover {
+    background-color: beige;
+    border-radius: 4px;
+}
+
+footer {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: aqua;
+    text-align: center;
+    padding: 5px 0;
+    z-index: 1000;
+}
+
+.content {
+    /* display: flex; */
+    /* justify-content: center;
+    align-items: center; */
+}
+
+.content img {
+    width: 500px;
+    height: 500px;
+}
+
+
+/* 드롭다운 */
+/* 드롭다운 버튼 스타일 */
+.dropdown {
+    margin-top: 20px;
+}
+
+.dropbtn {
+    background-color: #3498db;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    min-width: 160px;
+    border: none;
+    cursor: pointer;
+    margin-left: 240px;
+}
+
+.dropbtn:hover {
+    background-color: #2980b9;
+}
+
+/* 드롭다운 내용 숨김 */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    margin-left: 240px;
+}
+
+/* 드롭다운 내용 링크 스타일 */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* 드롭다운 내용 링크에 호버 시 스타일 변경 */
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* 드롭다운 버튼 클릭 시 드롭다운 내용 표시 */
+.show {
+    display: block;
+}
+
+/* 팀 */
+.team_main{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* team view container*/
+/* team_name_list */
+.team_name_list {
+    width: 370px;
+    height: 300px;
+    overflow: scroll;
+    overflow-x: hidden;
+    border: 1px solid black;
+    margin-top: 10px;
+}
+
+.team{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid black;
+    width: 330px;
+    margin: 10px;
+}
+
+.team img {
+    width:50px;
+    height: 50px;
+}
+
+.team_number {
+    min-width: 50px;
+    text-align: center;
+}
+
+.team_name {
+    min-width: 150px;
+}
+
+/* search container */
+/* 검색 창 컨테이너 스타일 */
+.search-container {
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+/* 검색 카테고리 선택 드롭다운 스타일 */
+.search-category select {
+    min-width: 100px;
+    padding: 10px;
+}
+
+/* 검색 입력창 스타일 */
+.search-input input {
+    padding: 10px;
+    flex: 1;
+}
+
+/* 검색 버튼 스타일 */
+.search-button button {
+    padding: 10px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* 검색 버튼에 호버 시 스타일 변경 */
+.search-button button:hover {
+    background-color: #2980b9;
+}
+
+
+
+/* team people container */
+.team_people_list {
+    border: 1px solid black;
+    width: 220px;
+    height: 200px;
+    overflow: scroll;
+    overflow-x: hidden;
+    margin-top: 10px;
+}
+
+.team_person {
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px solid black;
+    padding:7px;
+}
+
+.team_person .name {
+    min-width: 70px;
+}
+
+.team_person .id_number {
+    min-width: 100px;
+}
+
+.team_person .delete {
+    border: 1px solid black;
+    border-radius: 10%;
+}
+
+.team_person .delete:hover {
+    background-color: #ddd;
+}
+
+.add-button button {
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* 검색 버튼에 호버 시 스타일 변경 */
+.add-button button:hover {
+    background-color: #2980b9;
+}

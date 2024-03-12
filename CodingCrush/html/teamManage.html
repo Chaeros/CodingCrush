@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/teamManage.css" />
+    <title>Document</title>
+    <script src="../js/teamManage.js" defer></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-logo">
+        <a href="">코딩뽀개기</a>
+      </div>
+      <div class="navbar-menu">
+        <li><a href="">랜덤생성</a></li>
+        <li><a href="">메뉴2</a></li>
+        <li><a href="">메뉴3</a></li>
+        <li><a href="">메뉴4</a></li>
+      </div>
+      <div class="navbar-profile">
+        <img src="../image/profile.jpg" alt="" />
+      </div>
+    </nav>
+
+    <div class="mid">
+      <aside class="sidebar">
+        <li><a href="#">방 만들기</a></li>
+        <li><a href="#">유저 관리</a></li>
+        <li><a href="#">팀 생성</a></li>
+        <li><a href="#">팀 관리</a></li>
+      </aside>
+
+      <div class="container">
+        <div class="content">
+          <!-- 드롭다운 -->
+          <div class="dropdown">
+            <button onclick="toggleDropdown()" class="dropbtn">방 선택</button>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="#">방1</a>
+              <a href="#">방2</a>
+              <a href="#">방3</a>
+            </div>
+          </div>
+          <div class="team_main">
+            <div class="team_view_container">
+              <div class="team_name_list">
+                <div class="team">
+                  <img src="../image/profile.png" alt="">
+                  <span class="team_number">1팀</span><span class="team_name">cs팀</span>
+                </div>
+                <div class="team">
+                  <img src="../image/profile.png" alt="">
+                  <span class="team_number">2팀</span><span class="team_name">알고리즘 팀</span>
+                </div>
+                <div class="team">
+                  <img src="../image/profile.png" alt="">
+                  <span class="team_number">3팀</span><span class="team_name">마니또 팀</span>
+                </div>
+                <div class="team">
+                  <img src="../image/profile.png" alt="">
+                  <span class="team_number">4팀</span><span class="team_name">일타싸피 팀</span>
+                </div>
+                <div class="team">
+                  <img src="../image/profile.png" alt="">
+                  <span class="team_number">5팀</span><span class="team_name">b형 팀</span>
+                </div>
+                <div class="team">
+                  <img src="../image/profile.png" alt="">
+                  <span class="team_number">6팀</span><span class="team_name">미정 팀</span>
+                </div>
+              </div>
+              <div class="search-container">
+                <!-- 검색 카테고리 선택 드롭다운 -->
+                <div class="search-category">
+                  <select id="searchCategory">
+                    <option value="name">이름</option>
+                    <option value="id_number">학번</option>
+                    <option value="organization">소속</option>
+                  </select>
+                </div>
+              
+                <!-- 실제 검색 입력창 -->
+                <div class="search-input">
+                  <input type="text" id="searchInput" placeholder="검색어를 입력하세요">
+                </div>
+              
+                <!-- 검색 버튼 -->
+                <div class="search-button">
+                  <button onclick="performSearch()">검색</button>
+                </div>
+              </div>
+            </div>
+            <div class="team_people_container">
+              <div class="team_people_list">
+                <div class="team_person">
+                  <span class="name">박찬호</span><span class="id_number">11111</span><button class="delete">x</button>
+                </div>
+                <div class="team_person">
+                  <span class="name">이경곤</span><span class="id_number">22222</span><button class="delete">x</button>
+                </div>
+                <div class="team_person">
+                  <span class="name">서두나</span><span class="id_number">33333</span><button class="delete">x</button>
+                </div>
+                <div class="team_person">
+                  <span class="name">구재승</span><span class="id_number">44444</span><button class="delete">x</button>
+                </div>                
+                <div class="team_person">
+                  <span class="name">장정현</span><span class="id_number">44444</span><button class="delete">x</button>
+                </div>                
+                <div class="team_person">
+                  <span class="name">이수민</span><span class="id_number">44444</span><button class="delete">x</button>
+                </div>                
+              </div>
+              <div class="add-button">
+                <button>팀원 추가</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <p>팀 이름 : 한밭대</p>
+      <p>팀 구성 : 박찬호 장정현 서두나 이경곤 구재승</p>
+      <p>SSAFY</p>
+    </footer>
+  </body>
+</html>
